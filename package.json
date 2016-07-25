@@ -1,0 +1,22 @@
+{
+  "name": "week11-hangman",
+  "version": "1.0.0",
+  "description": "A hangman game that runs in the console. With focus on constructor functions.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunnyE/week11-hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunnyE/week11-hangman/issues"
+  },
+  "homepage": "https://github.com/SunnyE/week11-hangman#readme",
+  "dependencies": {
+    "inquirer": "^1.1.2"
+  }
+}
