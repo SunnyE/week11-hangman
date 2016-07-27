@@ -14,7 +14,7 @@ function inquirerer() {
             message: "The team you are guessing is " + wordObject.blankedWord.join(' ') + "Guess a letter"
         }
     ]).then(function(user){
-        var guess = user.letter.toLowerCase();
+        var guess = user.letters.toLowerCase();
         if (guess.length > 1){
             console.log('Only one guess at a time');
             inquirerer(); 
@@ -25,7 +25,7 @@ function inquirerer() {
             console.log('You already guessed that');
             inquirerer();
         } else{
-            wordObject.takeLetters(guess);
+            wordObject.getLetters(guess);
             console.log('You have guessed these letters');
             console.log('You have ' + wordObject.numGuesses + 'guesses remaining.');
             if (wordObject.currentWord.join('') === wordObject.blankedWord.join('')){
